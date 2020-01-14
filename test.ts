@@ -2,6 +2,8 @@ import { from, pipe, of, Observable } from 'rxjs';
 import { map, delay, mergeMap, concatMap, switchMap } from 'rxjs/operators';
 
 // run the following to see how each type of map handles inner observables
+// the regular map is commented out because it will console.log the definition for an observable 10x.
+// if you want to see this, just uncomment it.
 
 const quickStream = from([1,2,3,4,5,6,7,8]);
 
